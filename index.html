@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="css/style.css">
+
+        <script src = "js/jquery1.10.2.js"></script>
+        <script src = "js/underscore1.5.2.js"></script>
+        <script src = "js/backbone1.1.0.js"></script>
+        <script src = "js/model.js"></script>
+        <script src = "js/view.js"></script>
+        <script src = "js/main.js"></script>
+    </head>
+    <body>
+        <div class = "board">
+            <div class = "view">
+                <script id="list" type="text/template">
+                    <li>
+                        Name:
+                        <span class = "user_date"><%= first_name %></span>
+                    </li>
+                    <li>
+                        Last Name:
+                        <span class = "user_date"><%= last_name %></span>
+                    </li>
+                </script>
+            </div>
+        </div>
+
+        <div class = "form">
+            <div id = "input">
+                <p>First Name<br />
+                <input id = "first_name" type = "text" />
+                </p>
+
+                <p>Last Name<br />
+                <input id = "last_name" type = "text" />
+            </div>
+
+            <div class = "button">
+                <button id = "show">
+                    Show
+                </button>
+                <button id = "hide">
+                    Hide
+                </button>
+            </div>
+        </div>
+        
+        <div id = "footer"></div>
+    </body>
+</html>
